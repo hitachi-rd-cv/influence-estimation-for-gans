@@ -1,0 +1,24 @@
+[TotalizeCleansingWrtEval]
+processed_dir = './processed_iclr_mnist_cleansing'
+wd = 0.001
+wg = 0.001
+s_tr = 50000
+s_va = 10000
+s_te = 10000
+bs = 100
+a = "smallcnngan"
+z_dim = 32
+h_d_dim = 32
+h_g_dim = 32
+nepochs = 20
+ld = 0.001
+lg = 0.001
+sim = true
+classifier = "cnnmnist"
+bn_g = true
+bn_d = true
+seeds = [1385,1386,1387,1388,1389,1390,1391,1392,1393,1394,1395,1396,1397,1398,1399]
+retrace_after = 19
+removal_rates = [0.01,0.02,0.05,0.1,0.2,0.3,0.4,0.5,0.7,0.9]
+eval_metrics = ["fid","inception_score"]
+metrics = ["fid","inception_score","loss_d","if","random"]

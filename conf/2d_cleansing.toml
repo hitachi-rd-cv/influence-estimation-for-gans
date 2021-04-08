@@ -1,0 +1,22 @@
+[TotalizeCleansingWrtEval]
+processed_dir = './processed_iclr_2d_cleansing'
+s_tr = 50000
+s_va = 10000
+s_te = 10000
+bs = 100
+ld = 1e-3
+lg = 1e-3
+a = "smallmulvargaussgan"
+z_dim = 10
+nepochs = 70
+retrace_after = 69
+sim = true
+h_d_dim = 64
+h_g_dim = 32
+classifier = "cnnmnist"
+d = "mulvargaussian"
+nc = 1
+seeds = [1385,1386,1387,1388,1389,1390,1391,1392,1393,1394,1395,1396,1397,1398,1399]
+removal_rates = [0.01,0.02,0.05,0.1,0.15,0.2,0.25,0.3,0.35,0.4]
+eval_metrics = ["log_likelihood_kde"]
+metrics = ["log_likelihood_kde","loss_d","if_data","random"]

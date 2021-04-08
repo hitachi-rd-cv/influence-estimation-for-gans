@@ -1,0 +1,21 @@
+[TotalizeValid]
+processed_dir = './processed_iclr_2d_valid'
+s_tr = 10000
+s_va = 1000
+s_te = 1000
+bs = 100
+ld = 1e-3
+lg = 1e-3
+a = "smallmulvargaussgan"
+z_dim = 10
+nepochs = 50
+sim = true
+h_d_dim = 64
+h_g_dim = 32
+d = "mulvargaussian"
+nc = 1
+ncfsgd = 200
+metrics = ["log_likelihood_kde"]
+seeds = [1200,1201,1202,1203,1204,1205,1206,1207,1208,1209]
+retrace_afters = [49,45,40,30,0]
+jaccard_size = 0.1
