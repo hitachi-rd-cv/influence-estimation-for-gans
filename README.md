@@ -2,7 +2,7 @@
 
 This code reproduces the experiments in the following paper:
 
-> Naoyuki Terashita and Hiroki Ohashi and Yuichi Nonaka and Takashi Kanemaru
+> Naoyuki Terashita, Hiroki Ohashi, Yuichi Nonaka, and Takashi Kanemaru
 >
 > [Influence Estimation for Generative Adversarial Networks](https://openreview.net/forum?id=opHLcXxYTC_)
 >
